@@ -2,6 +2,10 @@ from flask import Flask
 
 app=Flask(__name__)
 
+@app.route("/newfeature")
+def new_feature():
+	return "This route was added by Utkarsh"
+
 @app.route("/")
 def home():
 	return "Hello Hacktoberfest!"
